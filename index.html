@@ -9,35 +9,66 @@
 <body>
 
   <!-- ===== Navbar ===== -->
-  <header class="navbar">
-    <div class="container nav-wrapper">
-      <div class="logo">
-        <img src="logo.png" alt="TRIP20 Logo">
-      </div>
+<header class="navbar">
+  <div class="container nav-wrapper">
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo-removebg-preview.png" alt="Trip20 Holidays Logo">
+      <span class="company-name">Trip20 Holidays</span>
     </div>
-  </header>
 
-  <!-- ===== Hero Section ===== -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>TRIP20 HOLIDAYS</h1>
-      <p>
-        Your trusted partner for Visas, Tours, Immigration & Dream Vacations<br>
-        Worldwide
-      </p>
-      <a href="#" class="btn">Get Free Consultation</a>
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </section>
+
+    <!-- Nav Links -->
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Why Choose Us?</a></li>
+        <li><a href="#">Company Profile</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+ <section class="hero">
+  <!-- Background Video -->
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="main.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Dark Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Content -->
+  <div class="hero-content">
+    <h1>TRIP20 HOLIDAYS</h1>
+    <p>
+      Your trusted partner for Visas, Tours, Immigration & Dream Vacations<br>
+      Worldwide
+    </p>
+    <a href="#" class="btn">Contact Us</a>
+    <a href="#" class="btn btn-outline">Services</a>
+  </div>
+</section>
 
   <!-- ===== WhatsApp Floating Button ===== -->
   <a href="#" class="whatsapp-btn">
@@ -46,12 +77,114 @@
 
 
 
+
+  <section class="about-us">
+  <div class="container">
+
+    <h2 class="section-title">About Us</h2>
+
+    <div class="about-wrapper">
+
+      <!-- Left Content -->
+      <div class="about-content">
+        <h3>Your Journey Begins With Trip20 Holidays</h3>
+        <p>
+          Trip20 Holidays is a trusted travel and visa service provider dedicated to
+          turning your travel dreams into reality. With years of experience in
+          visas, tours, immigration services, and customized holiday packages,
+          we ensure a smooth and hassle-free journey for our clients.
+        </p>
+
+        <p>
+          Whether you are planning a family vacation, honeymoon, business trip,
+          or international tour, our expert team is here to guide you at every
+          step with transparency, reliability, and personalized support.
+        </p>
+
+        <ul class="about-points">
+          <li>✔ Trusted Visa & Immigration Experts</li>
+          <li>✔ Customized Travel Packages</li>
+          <li>✔ Worldwide Tour Services</li>
+          <li>✔ Customer Satisfaction Guaranteed</li>
+        </ul>
+
+        <a href="#" class="btn">Contact Us</a>
+      </div>
+
+      <!-- Right Image -->
+      <div class="about-image">
+        <img src="about.jpg" alt="About Trip20 Holidays">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
   <section class="services">
   <h2 class="section-title">Our Services</h2>
   <span class="underline"></span>
 
   <div class="services-grid">
 
+
+    <div class="service-card">
+        <div class="icon">🛂</div>
+        <h3>Visa Services</h3>
+        <p>
+          Hassle-free visa assistance for tourist, business, student, and work visas
+          with expert guidance.
+        </p>
+      </div>
+ <!-- Card 2 -->
+      <div class="service-card">
+        <div class="icon">🌍</div>
+        <h3>Immigration Services</h3>
+        <p>
+          Professional immigration solutions to help you settle abroad smoothly
+          with trusted consultation.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <div class="icon">✈️</div>
+        <h3>Travel & Tour Packages</h3>
+        <p>
+          Customized domestic and international tour packages designed to match
+          your travel dreams.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card">
+        <div class="icon">🏨</div>
+        <h3>Hotel Stay</h3>
+        <p>
+          Comfortable and affordable hotel bookings worldwide with verified
+          partners and best deals.
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="service-card">
+        <div class="icon">🏖️</div>
+        <h3>Vacation Packages</h3>
+        <p>
+          All-inclusive vacation packages for families, couples, and groups to
+          create unforgettable memories.
+        </p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="service-card">
+        <div class="icon">🛡️</div>
+        <h3>Travel Insurance</h3>
+        <p>
+          Secure your journey with reliable travel insurance covering medical
+          emergencies and trip protection.
+        </p>
+      </div>
     <div class="service-card">
       <div class="icon">✈️</div>
       <h3>International Tours</h3>
@@ -102,6 +235,7 @@
 
   </div>
 </section>
+
 <!-- ===== Popular Destinations ===== -->
 <section class="destinations">
   <h2 class="section-title">Popular Destinations</h2>
@@ -142,6 +276,100 @@
     <h4>- Trip20Holidays</h4>
   </div>
 </section>
+<section class="why-choose-us">
+  <div class="container">
+
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="why-cards">
+
+      <div class="why-card">
+        <div class="icon">🌍</div>
+        <h3>Worldwide Services</h3>
+        <p>
+          We offer visa, travel, and tour services across multiple countries
+          with reliable global partners.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">👨‍💼</div>
+        <h3>Expert Guidance</h3>
+        <p>
+          Our experienced professionals guide you at every step for a smooth
+          and stress-free journey.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">⚡</div>
+        <h3>Fast & Transparent Process</h3>
+        <p>
+          Clear documentation, honest advice, and quick processing without
+          hidden charges.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">🤝</div>
+        <h3>Customer-Centric Approach</h3>
+        <p>
+          We focus on personalized solutions tailored to your travel and
+          immigration needs.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">💰</div>
+        <h3>Affordable Pricing</h3>
+        <p>
+          Best value packages and competitive pricing with no compromise on
+          service quality.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">⭐</div>
+        <h3>Trusted & Reliable</h3>
+        <p>
+          Thousands of satisfied customers trust Trip20 Holidays for safe and
+          memorable journeys.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="company-profile">
+  <div class="container">
+
+    <h2 class="section-title">Company Profile</h2>
+
+    <!-- Center Video -->
+    <div class="profile-video">
+
+      <video controls poster="video-poster.jpg">
+        <source src="Video Project 4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Buttons -->
+      <div class="profile-buttons">
+        <a href="visiting-card.jpg" download class="btn btn-glass">
+          Download Visiting Card
+        </a>
+
+        <a href="company-profile.pdf" target="_blank" class="btn btn-primary">
+          Download Company PDF
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 
 <!-- ===== Contact ===== -->
 <section class="contact">
